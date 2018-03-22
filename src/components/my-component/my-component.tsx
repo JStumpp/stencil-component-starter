@@ -1,3 +1,5 @@
+import '@ionic/core'
+
 import { Component, Prop } from '@stencil/core';
 
 @Component({
@@ -14,6 +16,7 @@ export class MyComponent {
     return (
       <div>
         Hello, World! I'm {this.first} {this.last}
+        <ion-checkbox slot="start" value="test"></ion-checkbox>
       </div>
     );
   }
